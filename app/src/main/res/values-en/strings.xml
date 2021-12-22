@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nom_app">CountAnimals</string>
+    <string name="puntuacio">"score: "</string>
+    <string name="sortir">exit</string>
+    <string name="error">error!</string>
+    <string name="felicitacio">good!</string>
+</resources>

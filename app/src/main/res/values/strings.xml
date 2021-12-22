@@ -1,0 +1,7 @@
+<resources>
+    <string name="nom_app">ComptaAnimals</string>
+    <string name="puntuacio">puntuació: </string>
+    <string name="sortir">sortir</string>
+    <string name="felicitacio">molt bé!</string>
+    <string name="error">error!</string>
+</resources>

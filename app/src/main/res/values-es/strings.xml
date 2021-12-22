@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nom_app">CuentaAnimales</string>
+    <string name="puntuacio">puntuación:</string>
+    <string name="sortir">salir</string>
+    <string name="error">error!</string>
+    <string name="felicitacio">muy bien!</string>
+</resources>

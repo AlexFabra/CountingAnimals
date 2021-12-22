@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorOrange"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        tools:context=".MainActivity">
+
+        <GridLayout
+            android:id="@+id/gl_esquerra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAqua"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="2"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/img_esquerra_r1c1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i03" />
+
+            <ImageView
+                android:id="@+id/img_esquerra_r1c2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i04" />
+
+            <ImageView
+                android:id="@+id/img_esquerra_r2c1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i09" />
+
+            <ImageView
+                android:id="@+id/img_esquerra_r2c2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i00" />
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VS"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp">
+        </TextView>
+
+        <GridLayout
+            android:id="@+id/gl_dret"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorLime"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="2"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/img_dreta_r1c1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i01" />
+
+            <ImageView
+                android:id="@+id/img_dreta_r1c2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i02" />
+
+            <ImageView
+                android:id="@+id/img_dreta_r2c1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i08" />
+
+            <ImageView
+                android:id="@+id/img_dreta_r2c2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/i03" />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/greater"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="greater than"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/greater"
+            android:onClick="gestionaResposta"
+            />
+
+        <ImageButton
+            android:id="@+id/equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="equal"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/equal"
+            android:onClick="gestionaResposta"
+            />
+
+        <ImageButton
+            android:id="@+id/less"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="less than"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/less"
+            android:onClick="gestionaResposta"
+            />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gl_peu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:columnCount="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        tools:context=".MainActivity">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/sortir"
+            android:textSize="12sp"
+            android:onClick="sortir"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="right"
+            android:text="@string/puntuacio"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_punts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="12sp"/>
+
+    </GridLayout>
+</LinearLayout>
